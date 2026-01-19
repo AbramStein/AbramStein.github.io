@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhancement 2 - Algorithms and Data Structures</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Abram Steinbrenner III</a>
+      <div class="nav-links">
+        <a href="self-assessment.html">Self-Assessment</a>
+        <a href="code-review.html">Code Review</a>
+        <a href="enhancement1.html">Enhancement 1</a>
+        <a class="active" href="enhancement2.html">Enhancement 2</a>
+        <a href="enhancement3.html">Enhancement 3</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-inner">
+      <h1>Enhancement 2</h1>
+      <p>Algorithms and Data Structures</p>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <h2>Artifact</h2>
+      <p>
+        CS 340: Grazioso Salvare Animal Shelter Dashboard (MongoDB backend and Python Dash dashboard).
+        This enhancement focuses on improving algorithm efficiency for filtering, sorting, grouping, and aggregation.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Planned Enhancement</h3>
+      <ul class="clean-list">
+        <li>Optimize filtering logic by reducing redundant database queries</li>
+        <li>Improve aggregation logic used to compute breed distributions and rescue classifications</li>
+        <li>Refine sorting and grouping algorithms for consistent and efficient presentation</li>
+        <li>Document trade-offs between client-side processing and database-side querying</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h3>Pseudocode</h3>
+      <div class="code-block">
+        <pre>
+Receive user filter selection
+  -> Build optimized MongoDB query
+  -> Retrieve filtered dataset
+  -> Aggregate results by breed and rescue type
+  -> Limit results to top categories
+  -> Return structured data for tables and charts
+        </pre>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Status</h3>
+      <p class="muted">Placeholder: Add implementation details, results, testing notes, and evidence after completing the enhancement.</p>
+      <ul class="clean-list">
+        <li><strong>Repository:</strong> <a href="#">Add GitHub repo link</a></li>
+        <li><strong>Evidence:</strong> <a href="#">Add screenshots or performance notes</a></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>

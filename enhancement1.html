@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enhancement 1 - Software Design and Engineering</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Abram Steinbrenner III</a>
+      <div class="nav-links">
+        <a href="self-assessment.html">Self-Assessment</a>
+        <a href="code-review.html">Code Review</a>
+        <a class="active" href="enhancement1.html">Enhancement 1</a>
+        <a href="enhancement2.html">Enhancement 2</a>
+        <a href="enhancement3.html">Enhancement 3</a>
+        <a href="projects.html">Projects</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="page-header-inner">
+      <h1>Enhancement 1</h1>
+      <p>Software Design and Engineering</p>
+    </div>
+  </header>
+
+  <main class="content">
+    <section class="section">
+      <h2>Enhancement One: Software Design and Engineering</h2>
+      <p class="muted">Abram Steinbrenner</p>
+    </section>
+
+    <section class="section">
+      <h3>Artifact Description</h3>
+      <p>
+        The artifact selected for this enhancement is an Android-based weight tracker mobile application originally developed during earlier coursework in the Computer Science program.
+        The application allows users to create an account, log weight entries, set goal weights, view progress over time, and manage personal notification preferences.
+        The original version of the app was created prior to CS 499 as a functional but relatively straightforward mobile application focused primarily on core functionality.
+      </p>
+      <p>
+        For this milestone, the artifact was enhanced during the CS 499 course to improve its software design, usability, and overall architectural clarity.
+        These enhancements were implemented as part of a planned improvement process following an initial code review and were focused on strengthening maintainability, reliability, and user experience rather than rewriting existing functionality.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Justification for Inclusion in the ePortfolio</h3>
+      <p>
+        This artifact was selected for inclusion in my ePortfolio because it demonstrates practical software design and engineering skills using a modern mobile development platform.
+        The application integrates multiple core computer science concepts, including user interface design, persistent data storage, modular code organization, permission handling, and interaction with Android platform APIs.
+      </p>
+      <p>
+        Several specific components showcase my software development abilities, including improved architectural organization with clearer separation between UI logic, data handling, and system services;
+        enhanced user input handling such as validated and formatted phone number input for SMS notifications;
+        state persistence and session management using SharedPreferences;
+        and permission-aware design that ensures SMS functionality activates only when appropriate permissions are granted.
+        Additional user experience improvements include dynamic UI enablement, input feedback, and consistent navigation behavior.
+      </p>
+      <p>
+        The artifact was enhanced by extending and refactoring existing features rather than rewriting them, reflecting realistic industry practices where developers are expected to improve and maintain established codebases while preserving functionality.
+        These changes also improve readability and maintainability for future developers who may work on the project.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Alignment With Planned Course Outcomes</h3>
+      <p>
+        This enhancement aligns with the course outcomes identified earlier in the term.
+        The SMS notification feature required evaluating Android platform constraints, managing runtime permissions, and designing safe fallback behaviors when functionality is unavailable, demonstrating the ability to design and evaluate computing solutions.
+        The project also makes use of well-founded tools and techniques, including Android SDK components, Material Design UI elements, SharedPreferences, and lifecycle-aware methods to implement reliable and maintainable features.
+      </p>
+      <p>
+        In addition, a security mindset was applied throughout the enhancement process.
+        SMS permissions are handled defensively, user input is validated before use, and sensitive data such as phone numbers is stored in a controlled and limited manner.
+        At this stage, no updates to the outcome coverage plan are required, as the enhancement aligns with the original scope and objectives defined earlier in the course.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Reflection on the Enhancement Process</h3>
+      <p>
+        Enhancing this artifact was a valuable learning experience that emphasized the importance of thoughtful software design beyond basic functionality.
+        One key lesson was recognizing how architectural decisions, such as when and where user preferences are saved, can significantly impact application reliability and user experience.
+      </p>
+      <p>
+        A major challenge involved managing Android’s activity lifecycle correctly.
+        Issues such as crashes caused by uninitialized UI elements and missing resources reinforced the need for defensive programming, careful initialization order, and consistent testing.
+        Debugging these problems required interpreting runtime errors, reviewing stack traces, and systematically isolating root causes.
+      </p>
+      <p>
+        Another important outcome was understanding platform limitations.
+        While SMS functionality was fully implemented and correct, testing revealed that Android emulators cannot send real SMS messages.
+        Identifying and documenting this limitation demonstrated an understanding of real-world deployment constraints rather than a flaw in the design.
+      </p>
+      <p>
+        Overall, this enhancement strengthened my ability to responsibly modify existing software, apply best practices in mobile application design, and clearly communicate technical decisions.
+        These skills are directly applicable to professional software development environments.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Evidence</h3>
+      <p class="muted">Add links and screenshots here when ready.</p>
+      <ul class="clean-list">
+        <li><strong>Repository:</strong> <a href="#">Add GitHub repo link</a></li>
+        <li><strong>Before and After Notes:</strong> <a href="#">Add notes or screenshots</a></li>
+        <li><strong>Build or Run Instructions:</strong> <a href="#">Add README link or section</a></li>
+      </ul>
+    </section>
+
+    <footer class="footer">
+      <p><a href="index.html">Back to Home</a></p>
+    </footer>
+  </main>
+</body>
+</html>
