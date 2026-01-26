@@ -34,43 +34,93 @@
 
   <main class="content">
     <section class="section">
-      <h2>Artifact</h2>
+      <h2>Enhancement Two: Algorithms and Data Structures</h2>
+      <p class="muted">Abram Steinbrenner</p>
+    </section>
+
+    <section class="section">
+      <h3>Artifact Description</h3>
       <p>
-        CS 340: Grazioso Salvare Animal Shelter Dashboard (MongoDB backend and Python Dash dashboard).
-        This enhancement focuses on improving algorithm efficiency for filtering, sorting, grouping, and aggregation.
+        The artifact selected for this enhancement is the Grazioso Salvare Animal Shelter Dashboard,
+        originally developed during CS 340: Client/Server Development. The project consists of a
+        MongoDB backend and a Python-based dashboard built with Dash and Plotly that allows users
+        to filter, analyze, and visualize animal shelter records.
+      </p>
+      <p>
+        The system supports identifying dogs suitable for specialized rescue training such as
+        water rescue, disaster response, and wilderness search operations. The original version
+        of the dashboard was functionally correct but relied heavily on client-side data processing
+        and repetitive conditional logic for filtering and aggregation.
       </p>
     </section>
 
     <section class="section">
-      <h3>Planned Enhancement</h3>
-      <ul class="clean-list">
-        <li>Optimize filtering logic by reducing redundant database queries</li>
-        <li>Improve aggregation logic used to compute breed distributions and rescue classifications</li>
-        <li>Refine sorting and grouping algorithms for consistent and efficient presentation</li>
-        <li>Document trade-offs between client-side processing and database-side querying</li>
-      </ul>
+      <h3>Justification for Inclusion in the ePortfolio</h3>
+      <p>
+        This artifact was selected for inclusion in my ePortfolio because it demonstrates applied
+        algorithmic reasoning in a realistic, data-driven application. The project requires
+        efficient handling of structured datasets, careful selection of algorithms, and explicit
+        trade-off analysis between competing design approaches.
+      </p>
+      <p>
+        Key components of the enhancement showcase my skills in algorithms and data structures,
+        including centralized query mappings to reduce conditional complexity, database-side
+        filtering to minimize unnecessary data transfer, and aggregation logic that groups and
+        summarizes large datasets efficiently. The enhancement emphasizes scalability,
+        maintainability, and correctness rather than surface-level functionality.
+      </p>
     </section>
 
     <section class="section">
-      <h3>Pseudocode</h3>
-      <div class="code-block">
-        <pre>
-Receive user filter selection
-  -> Build optimized MongoDB query
-  -> Retrieve filtered dataset
-  -> Aggregate results by breed and rescue type
-  -> Limit results to top categories
-  -> Return structured data for tables and charts
-        </pre>
-      </div>
+      <h3>Alignment With Planned Course Outcomes</h3>
+      <p>
+        This enhancement aligns with the course outcomes identified earlier in the term. In
+        particular, it demonstrates the ability to design and evaluate computing solutions
+        using algorithmic principles while managing trade-offs between client-side processing
+        and database-side querying.
+      </p>
+      <p>
+        The project also illustrates the use of industry-relevant tools and techniques, including
+        MongoDB aggregation pipelines, structured query design, and defensive validation when
+        working with indexed datasets. No updates to the original outcome coverage plan are
+        required, as the enhancement fulfills its intended scope.
+      </p>
     </section>
 
     <section class="section">
-      <h3>Status</h3>
-      <p class="muted">Placeholder: Add implementation details, results, testing notes, and evidence after completing the enhancement.</p>
+      <h3>Reflection on the Enhancement Process</h3>
+      <p>
+        Enhancing this artifact reinforced the importance of placing algorithms at the appropriate
+        layer of a system. While client-side processing was initially sufficient for small datasets,
+        refactoring the logic to rely on database-side filtering and aggregation significantly
+        improved efficiency and scalability.
+      </p>
+      <p>
+        One challenge involved restructuring existing logic without breaking dashboard behavior.
+        This required careful testing and validation, particularly when replacing fragile index-based
+        access patterns with safer, column-based data access. The process emphasized defensive
+        programming and the value of maintainable algorithm design.
+      </p>
+      <p>
+        Overall, this enhancement strengthened my ability to reason about algorithmic efficiency
+        in practical applications and to clearly communicate the rationale behind design decisions.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Evidence</h3>
       <ul class="clean-list">
-        <li><strong>Repository:</strong> <a href="#">Add GitHub repo link</a></li>
-        <li><strong>Evidence:</strong> <a href="#">Add screenshots or performance notes</a></li>
+        <li>
+          <strong>Repository:</strong>
+          <a href="https://github.com/AbramStein/cs499-grazioso-salvare" target="_blank" rel="noopener">
+            View Enhancement 2 Code on GitHub
+          </a>
+        </li>
+        <li>
+          <strong>Implementation Notes:</strong>
+          Filtering and aggregation behavior can be verified by running the dashboard and observing
+          database-side query execution and aggregation results.
+        </li>
       </ul>
     </section>
 
