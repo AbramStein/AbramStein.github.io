@@ -34,43 +34,107 @@
 
   <main class="content">
     <section class="section">
-      <h2>Artifact</h2>
+      <h2>Enhancement Three: Databases</h2>
+      <p class="muted">Abram Steinbrenner</p>
+    </section>
+
+    <section class="section">
+      <h3>Artifact Description</h3>
       <p>
-        CS 360: Scale Up! Weight Tracker App (SQLite via Android).
-        This enhancement focuses on improving schema clarity, centralizing CRUD operations, and strengthening validation and safe data handling.
+        The artifact selected for this enhancement is the CS 360 Scale Up! Weight Tracker App,
+        originally developed during the CS 360 Mobile Architecture and Programming course.
+        The application is an Android-based mobile app that allows users to create accounts,
+        authenticate securely, and store weight tracking data using a local SQLite database.
+      </p>
+      <p>
+        The original implementation supported basic data persistence and CRUD operations but
+        relied on minimal validation and stored sensitive data in an insecure format. While
+        functionally correct, the database design and access patterns left opportunities for
+        improvement in security, maintainability, and structural clarity.
       </p>
     </section>
 
     <section class="section">
-      <h3>Planned Enhancement</h3>
+      <h3>Justification for Inclusion in the ePortfolio</h3>
+      <p>
+        This artifact was selected for inclusion in my ePortfolio because it demonstrates
+        practical database design within a real-world application context. The system manages
+        persistent user data, authentication records, and time-series weight entries, making
+        it a strong example of applied database-backed software development.
+      </p>
+      <p>
+        The enhancement showcases my ability to identify weaknesses in an existing database
+        design and implement improvements using industry-aligned practices. Key improvements
+        include schema refinement, centralized data access, strict validation, and secure
+        credential storage. Together, these changes significantly improve the reliability
+        and security of the application.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Implemented Database Enhancements</h3>
       <ul class="clean-list">
-        <li>Improve database schema organization for clarity and extensibility</li>
-        <li>Centralize CRUD operations to reduce duplication</li>
-        <li>Add stricter input validation before database writes</li>
-        <li>Improve separation between database logic and UI logic to reduce risk</li>
+        <li>Refactored database schema with explicit foreign key relationships and constraints</li>
+        <li>Centralized all CRUD operations using a repository pattern</li>
+        <li>Added layered input validation prior to all database writes</li>
+        <li>Improved separation between UI logic and database access logic</li>
+        <li>Replaced plaintext password storage with salted and hashed credentials</li>
+        <li>Introduced a dedicated account creation screen to enforce stronger password rules</li>
       </ul>
     </section>
 
     <section class="section">
-      <h3>Pseudocode</h3>
-      <div class="code-block">
-        <pre>
-Receive user input
-  -> Validate values
-  -> Open database connection
-  -> Insert or update record
-  -> Query updated data
-  -> Return results to controller
-        </pre>
-      </div>
+      <h3>Alignment With Planned Course Outcomes</h3>
+      <p>
+        This enhancement demonstrates strong alignment with the planned course outcomes.
+        In particular, it illustrates the ability to design and evaluate computing solutions
+        involving persistent data, implement reliable database-backed systems, and apply
+        a security-focused mindset when handling sensitive information.
+      </p>
+      <p>
+        The refactored database architecture and secure credential handling directly support
+        outcomes related to software engineering, database design, and security awareness.
+        No changes to the original outcome coverage plan were required.
+      </p>
     </section>
 
     <section class="section">
-      <h3>Status</h3>
-      <p class="muted">Placeholder: Add implementation details, schema changes, validation rules, and evidence once complete.</p>
+      <h3>Reflection on the Enhancement Process</h3>
+      <p>
+        Enhancing this artifact reinforced the importance of treating databases as a critical
+        component of application security and reliability rather than as simple storage
+        mechanisms. Implementing secure password handling and enforcing validation at multiple
+        layers highlighted how small design decisions can significantly impact system integrity.
+      </p>
+      <p>
+        One challenge involved refactoring database access without breaking existing
+        application behavior. This required careful testing and a clear separation of
+        responsibilities between the UI and data layers. The process emphasized defensive
+        programming and long-term maintainability.
+      </p>
+      <p>
+        Overall, this enhancement strengthened my confidence in designing secure,
+        database-driven applications and communicating technical improvements clearly
+        in a professional context.
+      </p>
+    </section>
+
+    <section class="section">
+      <h3>Evidence</h3>
       <ul class="clean-list">
-        <li><strong>Repository:</strong> <a href="#">Add GitHub repo link</a></li>
-        <li><strong>Evidence:</strong> <a href="#">Add screenshots or schema notes</a></li>
+        <li>
+          <strong>Repository:</strong>
+          <a href="https://github.com/AbramStein/cs499-weight-tracker/tree/cs499-enhancement2"
+             target="_blank" rel="noopener">
+            View Enhancement 3 Code on GitHub (cs499-enhancement2)
+          </a>
+        </li>
+        <li>
+          <strong>Implementation Notes:</strong>
+          Enhancements can be verified by reviewing the repository tag, which includes
+          the updated database schema, repository layer, secure authentication logic,
+          and validation rules.
+        </li>
       </ul>
     </section>
 
