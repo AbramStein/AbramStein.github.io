@@ -272,6 +272,18 @@ body {
   margin-top: 10px;
 }
 
+/* Email copy functionality */
+.email-copy {
+  cursor: pointer;
+  display: inline-block;
+  color: #666;
+}
+
+.email-copy:hover {
+  text-decoration: underline;
+  color: #2c3e50;
+}
+
 /* Code block style for pseudocode */
 .code-block {
   border: 1px solid #e6e9ee;

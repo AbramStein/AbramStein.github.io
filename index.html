@@ -102,9 +102,20 @@
         <a class="btn btn-ghost" href="#" aria-label="Resume Link">Resume</a>
       </div>
 
-      <p class="email-copy" onclick="copyEmail()" style="cursor:pointer;">
-        📧 abrams.steinbrenner@snhu.edu (Click to copy)
+      <p class="email-copy" onclick="copyEmail(this)">
+        abram.steinbrenner@snhu.edu
       </p>
+
+      <script>
+        function copyEmail(element) {
+        const email = element.textContent.trim();
+        navigator.clipboard.writeText(email).then(() => {
+          alert('Email copied to clipboard!');
+        }).catch(err => {
+          console.error('Failed to copy email: ', err);
+        });
+      }
+      </script>
     </section>
 
     <footer class="footer">
